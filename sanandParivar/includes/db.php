@@ -1,7 +1,7 @@
 <?php
 function db_connect()
 {
-    $host = "skpfamilymembers-server";
+    $host = "skpfamilymembers-server.mysql.database.azure.com";
     $dbUser = "loxeqovjro";
     $dbPass = "5SAVI30G1730APPP";
     $dbName = "sanand_parivar";
