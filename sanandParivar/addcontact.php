@@ -32,7 +32,7 @@
 					  $i++;
 						$family_member_name_en[$i] = $contact_family["family_member_name_en"];
 						$relation_en[$i] = $contact_family["relation_en"];
-						$dob_family[$i] = $contact_family["dob"];
+						//$dob_family[$i] = $contact_family["dob"];
 						$married_family[$i] = $contact_family["married"];
 						$blood_group_family[$i] = $contact_family["blood_group"];
 						$education_family[$i] = $contact_family["education"];
@@ -108,7 +108,7 @@
 							
 							<div class="col form-group">
 								<label>Member No:</label>
-								<input type="text" name="memberno" value="<?php echo $member_no; ?>" class="form-control" placeholder="Member No">
+								<input type="text" name="member_no" value="<?php echo $member_no; ?>" class="form-control" placeholder="Member No">
 							</div>
 							
 							<div class="col form-group">
@@ -241,7 +241,7 @@
 							<tr class="tr-header">
 								<th style="text-align: center; vertical-align: middle; font-size: 8pt;">Family Members Name</th>
 								<th style="text-align: center; vertical-align: middle; font-size: 8pt;">Relation</th>
-								<th style="text-align: center; vertical-align: middle; font-size: 8pt;">DOB</th>
+							
 								<th style="text-align: center; vertical-align: middle; font-size: 8pt;">Married</th>
 								<th style="text-align: center; vertical-align: middle; font-size: 8pt;">Blood Group</th>
 								<th style="text-align: center; vertical-align: middle; font-size: 8pt;">Study</th>
@@ -253,9 +253,9 @@
 									for($a = 0; $a < $rows_family; $a++) {
 										?>
 								<tr>
-									<td style="width: 18%; padding-top: 0.4rem; padding-left: 0.4rem; padding-right:0.4rem; border-top: 1px solid #dee2e6;"><input type="text" name="family_member_name_en[$a]" value="<?php echo $family_member_name_en[$a]; ?>" class="form-control"></td>
+									<td style="width: 18%; padding-top: 0.4rem; padding-left: 0.4rem; padding-right:0.4rem; border-top: 1px solid #dee2e6;"><input type="text" name="family_member_name_en" value="<?php echo $family_member_name_en[$a]; ?>" class="form-control"></td>
 									<td style="width: 12%; padding-top: 0.4rem; padding-left: 0.4rem; padding-right:0.4rem;; border-top: 1px solid #dee2e6;"><input type="text" name="relation_en[$a]" value="<?php echo $relation_en[$a]; ?>" class="form-control"></td>
-									<td style="width: 12%; padding-top: 0.4rem; padding-left: 0.4rem; padding-right:0.4rem;; border-top: 1px solid #dee2e6;"><input type="date" name="dob_family[$a]" value="<?php echo $dob_family[$a]; ?>" class="form-control"></td>
+									
 									<td style="width: 9%; padding-top: 0.4rem; padding-left: 0.4rem; padding-right:0.4rem;; border-top: 1px solid #dee2e6;">
 										<select name="married_family[$a]" value="<?php echo $married_family[$a];?>" class="form-control">
 											<option value="Yes" <?php if($married_family[$a] == 'Yes'): ?> selected="selected"<?php endif; ?> >Yes</option>
